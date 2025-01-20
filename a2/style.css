@@ -36,32 +36,6 @@ img {
     margin-bottom: 5%;
 }
 
-.row {
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.white {
-    border: 1px solid black;
-    width: 10%;
-    height: 60px;
-    background-color: white;
-    float: left;
-}
-
-.black {
-    border: 1px solid black;
-    width: 10%;
-    height: 60px;
-    background-color: #787878;
-    float: left;
-}
-
-.clear {
-    clear: both;
-}
-
 #footer {
     position: fixed;
     bottom: 0px;
@@ -74,4 +48,32 @@ img {
     text-align: center;
     background-color: #D4A373;
     /*border: solid 1px; Commenting out in lieu of background color */
+}
+
+.row {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.white {
+    border: 1px solid black;
+    width: 10%;
+    height: 60px;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+.black {
+    border: 1px solid black;
+    width: 10%;
+    height: 60px;
+    background-color: #787878;
+    float: left;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
 }
