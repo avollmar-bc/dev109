@@ -4,12 +4,8 @@ body {
     background-image: url("/dev109/a2/images/annie-spratt-xt79nQxc9Q0-unsplash.jpg");
     background-size: cover;
 }
-img {
-    margin-left: 5px;
-    margin-top: 10px;
-}
 
-#title {
+header {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -19,6 +15,14 @@ img {
     background-color: #CCD5AE;
     text-align: center;
     z-index: 10;
+}
+
+img {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#title {
     font-family: 'UglyTypist';
     font-weight: normal;
     font-style: normal;
