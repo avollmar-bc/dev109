@@ -56,8 +56,17 @@ img {
     margin-right: 10%;
 }
 
+.row > div {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.row > div:last-child {
+    border-right: 1px solid black;
+}
+
 .white {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 10%;
     height: 60px;
     background-color: white;
@@ -66,7 +75,7 @@ img {
 }
 
 .black {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 10%;
     height: 60px;
     background-color: #787878;
