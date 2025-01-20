@@ -4,12 +4,6 @@ body {
     background-image: url("https://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
     background-size: cover;
 }
-
-header {
-    padding: 10px;
-    margin: 10px;
-}
-
 img {
     margin-left: 5px;
     margin-top: 10px;
@@ -72,7 +66,7 @@ img {
     margin: 0px;
     width: 100%;
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; Commenting out for fixed positioning, much like header */
     text-align: center;
     background-color: #D4A373;
     /*border: solid 1px; Commenting out in lieu of background color */
