@@ -67,6 +67,7 @@ img {
     border-right: 1px solid black;
 }
 
+/*-- NOTE: The last row's border is applied directly to the tile elements, not the parent row element --*/
 #container > .row:last-child div {
     border-bottom: 1px solid black;
 }
