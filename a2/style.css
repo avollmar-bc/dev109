@@ -66,8 +66,15 @@ img {
 }
 
 #footer {
-    background-color: #D4A373;
-    /*border: solid 1px; Commenting out in lieu of background color */
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
     padding: 10px;
     margin: 10px;
+    text-align: center;
+    background-color: #D4A373;
+    /*border: solid 1px; Commenting out in lieu of background color */
 }
