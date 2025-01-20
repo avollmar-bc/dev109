@@ -50,6 +50,8 @@ img {
     /*border: solid 1px; Commenting out in lieu of background color */
 }
 
+/*-- Row and Tile Border Styles: This fix address the 2px borders that come from applying full borders to all tiles. --*/
+
 .row {
     position: relative;
     margin-left: 10%;
@@ -64,6 +66,12 @@ img {
 .row > div:last-child {
     border-right: 1px solid black;
 }
+
+#container > .row:last-child div {
+    border-bottom: 1px solid black;
+}
+
+/*-- END Row and Tile Border Styles Fix --*/
 
 .white {
     /*border: 1px solid black;*/
