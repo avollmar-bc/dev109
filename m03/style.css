@@ -1,1 +1,25 @@
 /*  Styles imported from 'https://www.htmlandcssbook.com/code-samples/chapter-10/thinking-inside-the-box-borderless.html'  */
+
+body {
+  font-family: Helvetica, Arial, sans-serif; /* https://media.screenpal.com/blog/wp-content/uploads/2023/04/helvetica-meme-fonts-268x300.jpg.webp */
+  color: #665544;
+  padding: 0 15% 0 15%;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: 'DancingScriptRegular‘;
+  font-size: 400%;
+}
+
+p {
+  font-family: 'DancingScriptRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 200%;
+}
+
+i {
+  color: darkgreen;
+}
