@@ -4,6 +4,18 @@ body {
     background-image: url("https://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
     background-size: cover;
 }
+
+header {
+    background-color: #CCD5AE; /*-- Working with this palette: https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373 --*/
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
 #title {
     position: fixed;
     top: 0px;
@@ -14,15 +26,10 @@ body {
     background-color: #62C2CE;
     text-align: center;
     z-index: 10;
-    font-family: 'JustLettersMedium';
+    font-family: 'UglyTypist';
     font-weight: normal;
     font-style: normal;
     font-size: 36px;
-}
-
-img {
-    margin-left: 5px;
-    margin-top: 10px;
 }
 
 #container {
@@ -50,7 +57,7 @@ img {
     border: 1px solid black;
     width: 10%;
     height: 60px;
-    background-color: #787878;
+    background-color: #D4A373;
     float: left;
 }
 
