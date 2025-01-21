@@ -23,6 +23,7 @@ img {
 }
 
 #title {
+    margin: 15px 0;
     font-family: 'UglyTypist';
     font-weight: normal;
     font-style: normal;
