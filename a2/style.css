@@ -17,11 +17,6 @@ header {
     z-index: 10;
 }
 
-img {
-    margin-left: 5px;
-    margin-top: 10px;
-}
-
 #title {
     margin: 15px 0;
     font-family: 'UglyTypist';
@@ -37,6 +32,10 @@ img {
     margin-bottom: 5%;
 }
 
+.black img, .white img {
+    margin: 15px 0;
+}
+
 #footer {
     position: fixed;
     bottom: 0px;
@@ -49,6 +48,11 @@ img {
     text-align: center;
     background-color: #D4A373;
     /*border: solid 1px; Commenting out in lieu of background color */
+}
+
+/*-- Footer links/images - Top and Bottom Margin --*/
+#footer img {
+    margin: 15px 0;
 }
 
 /*-- Row and Tile Border Styles: This fix address the 2px borders that come from applying full borders to all tiles. --*/
