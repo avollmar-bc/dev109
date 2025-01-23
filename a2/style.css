@@ -6,18 +6,22 @@ background-size: cover; /* Stretches background image to full viewport */
 }
 
 
-/* Heading/Title Styles */
+/* Header/Title Styles */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: #FAF7F0;
+    text-align: center;
+    z-index: 10;
+}
 
 #title {
-position: fixed;
-top: 0px;
-left: 0px;
-padding: 10px;
-margin: 0px;
-width: 100%;
-background-color: #FAF7F0;
-text-align: center;
-z-index:10;
+margin: 15px 0;
 font-family: 'RobotoRegular'; /* Imported font from OpenFontLibrary */
 color: #B17457;
 font-weight: normal;
