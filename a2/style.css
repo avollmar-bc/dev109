@@ -56,6 +56,10 @@ background-color: #787878;
 float: left;
 }
 
+.black img, .white img {
+    margin: 15px 0;
+}
+
 .row {
     position: relative;
     margin-left: 10%;
