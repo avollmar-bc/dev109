@@ -77,7 +77,7 @@ float: left;
 
 
 /* Clearfix */
-#clear{
+.clear {
 clear: both;
 }
 
