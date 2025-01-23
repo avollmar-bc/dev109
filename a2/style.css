@@ -5,6 +5,9 @@ background-image:url("#"); /* Add background image here */
 background-size: cover; /* Stretches background image to full viewport */
 }
 
+
+/* Heading/Title Styles */
+
 #title {
 position: fixed;
 top: 0px;
@@ -22,10 +25,8 @@ font-style: normal;
 font-size: 36px;
 }
 
-img {
-margin-left: 5px;
-margin-top: 10px;
-}
+
+/*Container Layout Styles*/
 
 #container {
 margin-top: 20%;
@@ -34,14 +35,10 @@ margin-right: 10%;
 margin-bottom: 5%;
 }
 
-.row{
-position: relative;
-margin-left: 10%;
-margin-right: 10%;
-}
+
+/* Row and Tile Styles */
 
 .white{
-border: 1px solid black;
 width: 10%;
 height: 60px;
 background-color: white;
@@ -49,17 +46,43 @@ float: left;
 }
 
 .black{
-border: 1px solid black;
 width: 10%;
 height: 60px;
 background-color: #FFFFFF; /* TODO: Add Footer Background Color */
 float: left;
 }
 
+.row {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* NOTE: This applies a single top and left border to each element, then a bottom and right border to the last tile of each row */
+/* This fixes the '2px border' overlap you see in adjacent tiles */
+.row > div {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.row > div:last-child {
+    border-right: 1px solid black;
+}
+
+/* This applies a bottom border to the last row of tiles */
+#container > .row:last-child div {
+    border-bottom: 1px solid black;
+}
+
+
+/* Clearfix */
 #clear{
 clear: both;
 }
 
+
+/* Footer Styles */
 #footer {
 border: solid 1px;
 padding: 10px;
