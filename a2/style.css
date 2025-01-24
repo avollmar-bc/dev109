@@ -3,7 +3,6 @@
 body {
 background-image:url(images/pexels-hngstrm-1939485.jpg); /* Add background image here */
 background-position: right top;
-background-repeat: repeat;
 background-size: cover; /* Stretches background image to full viewport */
 }
 
@@ -36,8 +35,9 @@ font-size: 36px;
 
 /*Container Layout Styles*/
 
-#container {
-margin-top: 20%;
+#container 
+{
+margin-top: 5%;
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 5%;
