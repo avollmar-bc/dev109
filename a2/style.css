@@ -10,23 +10,25 @@ background-size: cover; /* Stretches background image to full viewport */
 
 /* Header/Title Styles */
 
-header {
+header 
+{
     position: fixed;
     top: 0px;
     left: 0px;
     padding: 10px;
     margin: 0px;
     width: 100%;
-    background-color: #FAF7F0;
+    background-color: lightgray;
     text-align: center;
     z-index: 10;
 }
 
-#title {
+#title 
+{
 margin: 15px 0;
 font-family: 'RobotoRegular'; /* Imported font from OpenFontLibrary */
-color: #B17457;
-font-weight: normal;
+color: #b45910;
+font-weight: bold;
 font-style: normal;
 font-size: 36px;
 }
@@ -44,25 +46,29 @@ margin-bottom: 5%;
 
 /* Row and Tile Styles */
 
-.white{
+.white
+{
 width: 10%;
 height: 60px;
 background-color: white;
 float: left;
 }
 
-.black{
+.black
+{
 width: 10%;
 height: 60px;
 background-color: #787878;
 float: left;
 }
 
-.black img, .white img {
+.black img, .white img 
+{
     margin: 15px 0;
 }
 
-.row {
+.row 
+{
     position: relative;
     margin-left: 10%;
     margin-right: 10%;
@@ -86,12 +92,10 @@ float: left;
     border-bottom: 1px solid black;
 }
 
-
 /* Clearfix */
 .clear {
 clear: both;
 }
-
 
 /* Footer Styles */
 #footer {
