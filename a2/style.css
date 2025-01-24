@@ -79,6 +79,7 @@ float: left;
 /* NOTE: This applies a single top and left border to each element, then a bottom and right border to the last tile of each row */
 /* This fixes the '2px border' overlap you see in adjacent tiles */
 .row > div {
+    width: calc(12.5% - 1.125px); /* Centers the board by splitting up elements roughly 100/8. This includes a 1.125px buffer for the borders. */
     border-top: 1px solid black;
     border-left: 1px solid black;
 }
