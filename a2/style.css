@@ -1,14 +1,16 @@
 /* AV: COLOR PALETTE: https://colorhunt.co/palette/faf7f0d8d2c2b174574a4947 */
 
 body {
-background-image:url(images/pexels-hngstrm-1939485.jpg); /* Add background image here */
+background-image:url(images/pexels-hngstrm-1939485.jpg); 
+    /* NL: Add background image here from free online source */
 background-position: right top;
+    /* NL: Background image aligned to the top of the page starting in the right corner */
 background-size: cover; /* AV: Stretches background image to full viewport */
 }
 
 
 /* AV: Header/Title Styles */
-
+/* NL: bg color update to match the board style */
 header 
 {
     position: fixed;
@@ -21,7 +23,7 @@ header
     text-align: center;
     z-index: 10;
 }
-
+/* NL: font color update to match the board style */
 #title 
 {
 margin: 15px 0;
@@ -34,7 +36,7 @@ font-size: 36px;
 
 
 /* AV: Container Layout Styles*/
-
+/* NL: Container for the chest board Layout Styles updated for visual alignment on big screan*/
 #container 
 {
 margin-top: 7%;
@@ -42,10 +44,7 @@ margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 5%;
 }
-
-
 /* AV: Row and Tile Styles */
-
 .white
 {
 width: 10%;
@@ -53,7 +52,7 @@ height: 60px;
 background-color: white;
 float: left;
 }
-
+/* NL: Row and Tile Styles for black tile */
 .black
 {
 width: 10%;
@@ -61,12 +60,12 @@ height: 60px;
 background-color: #787878;
 float: left;
 }
-
+/* NL: set margin for the images inside the tiles */
 .black img, .white img 
 {
     margin: 15px 0;
 }
-
+/* NL: set margins for the content in class row */
 .row 
 {
     position: relative;
@@ -94,11 +93,13 @@ float: left;
 }
 
 /* AV: Clearfix */
+/*NL: avoide the wrap around the board */
 .clear {
 clear: both;
 }
 
 /* AV: Footer Styles */
+/* NL: Footer Styles no changes needed  */
 #footer {
 border: solid 1px;
 padding: 10px;
