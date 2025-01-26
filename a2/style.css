@@ -6,18 +6,18 @@ background-image:url(images/pexels-hngstrm-1939485.jpg);
 background-position: right top;
     /* NL: Background image aligned to the top of the page starting in the right corner */
 background-size: cover; /* AV: Stretches background image to full viewport */
+margin: 0; /* AV: Removed body element margin to ensure header and footer span entire viewport  */
 }
 
 
-/* AV: Header/Title Styles */
+/* AV: Header/Title Styles - Uniform layout like footer element (Removed fixed positioning) */
 /* NL: bg color update to match the board style */
 header 
 {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    border: solid 1px;
     padding: 10px;
-    margin: 0px;
+    margin: 10px 0 0 0;
+    background-color: #888888;
     width: 100%;
     background-color: lightgray;
     text-align: center;
