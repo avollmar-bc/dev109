@@ -37,10 +37,14 @@ font-size: 36px;
 /* NL: Container for the chest board Layout Styles updated for visual alignment on big screan*/
 #container 
 {
+margin: 10%;
+/* AV: Old margin spacing
 margin-top: 7%;
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 5%;
+*/
+
 }
 /* AV: Row and Tile Styles */
 .white
