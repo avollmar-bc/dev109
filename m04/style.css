@@ -49,6 +49,10 @@ li {
   margin-bottom: 1em;
 }
 
+#feature img {
+  max-width: 250px;
+}
+
 /* Background Color Adjustments */
 
 #nav {
