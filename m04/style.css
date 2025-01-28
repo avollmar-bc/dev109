@@ -39,12 +39,44 @@ li {
 }
 
 #nav, #footer {
-  background-color: #efefef;
   padding: 0.5em 0;
 }
 
 #feature, .article {
   height: 10em;
   margin-bottom: 1em;
-  background-color: #efefef;
 }
+
+/* Background Color Adjustments */
+
+#nav {
+  background-color: #D9DFC6;
+
+}
+
+#feature {
+  background-color: #FADA7A;
+
+}
+
+.column1 {
+  background-color: #EFF3EA;
+
+}
+
+.column2 {
+  background-color: #FFFDF0;
+
+}
+
+.column3 {
+  background-color: #FFF2C2;
+
+}
+
+#footer {
+  background-color: #F0A04B;
+
+}
+
+
