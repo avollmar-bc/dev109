@@ -49,9 +49,6 @@ li {
   margin-bottom: 1em;
 }
 
-#feature img {
-  max-width: 250px;
-}
 
 /* Background Color Adjustments */
 
@@ -62,7 +59,10 @@ li {
 
 #feature {
   background-color: #FADA7A;
-
+  background-image: url("images/bhill-transparent.png");
+  background-size:contain;
+  background-position: right;
+  background-repeat:no-repeat;}
 }
 
 .column1 {
