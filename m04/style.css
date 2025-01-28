@@ -7,6 +7,8 @@
 body {
   width: 90%;
   margin: 0 auto;
+  background-image: url('images/bharath-g-s-aLGiPJ4XRO4-unsplash.jpg');
+  background-size: cover;
 }
 
 #content {
