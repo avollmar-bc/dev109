@@ -23,8 +23,8 @@ function docReady(userSelction) {
   }
 }
 
-if (integerCheck != false) {
-  var table = integerCheck;
+if (integerCheck(userSelection)) {
+  var table = integerCheck(userSelection);
   var i = 1; // Initialize counter to 1
   var msg = '<h2>Multiplication Table</h2>'; // Message
 
