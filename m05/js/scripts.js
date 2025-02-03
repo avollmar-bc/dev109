@@ -3,10 +3,12 @@
 var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The result with be rounded to the nearest whole number.", "7");
 
  function integerCheck(input) {  //Checks if user input is an integer
-  if (input > 10 || input == "0" || input < 0) { //Zero edge case.
+  if (input > 10 || input == "0" || input < 0) { //Range, including 0 edge case.
     alert("BETWEEN 0 and 10, pal. Try again");
     window.location.reload(); //Lazy workaround, need to add new prompt without alert spam
+    return false;
   }
+
   if (isNaN(input) == false) {  //Input is an integer and within range
     input = Math.round(input);  //Round to nearest whole number
     return input; //Returns sanitized input
