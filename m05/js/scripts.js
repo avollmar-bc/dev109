@@ -1,7 +1,7 @@
 /*-- Imported from: https://javascriptbook.com/code/c04/js/example.js --*/
 
 
-function docReady(userSelection) { // see if DOM is already available
+function docReady() { // see if DOM is already available
   if (document.readyState === "complete" || document.readyState === "interactive") {
       setTimeout(userSelection, 100); //100ms timeout
   } else {
