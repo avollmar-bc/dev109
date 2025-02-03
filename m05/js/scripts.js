@@ -1,6 +1,6 @@
 /*-- Imported from: https://javascriptbook.com/code/c04/js/example.js --*/
 
-var userSelection = prompt("Please enter a number between 0 and 10. \n NOTE: The result with be rounded to the nearest whole number.", "7");
+var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The result with be rounded to the nearest whole number.", "7");
 
 function docReady(userSelction) {
   // see if DOM is already available
@@ -10,7 +10,7 @@ function docReady(userSelction) {
   } else {
       document.addEventListener("DOMContentLoaded", userSelection);
   }
-}    
+}
 
 
  function integerCheck(input) {  //Checks if user input is an integer
