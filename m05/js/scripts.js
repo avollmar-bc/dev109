@@ -3,7 +3,7 @@
 var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The result with be rounded to the nearest whole number.", "7");
 
  function integerCheck(input) {  //Checks if user input is an integer
-  if (isNaN(input) == false && input <= 10 && input <= 0) {  //Input is an integer and within range
+  if (isNaN(input) == false && (input <= 10) && (input > 0)) {  //Input is an integer and within range
     input = Math.round(input);  //Round to nearest whole number
     return input; //Returns sanitized input
   } else {  //Contains characters other than numbers
