@@ -20,7 +20,7 @@ function docReady(userSelction) {
     return input; //Returns sanitized input
   } else {  //Contains characters other than numbers
     alert("That's not an integer, silly");
-    var userSelection = prompt("Please enter a number between 0 and 10", "7");
+    window.location.reload();
   }
 }
 
