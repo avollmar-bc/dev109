@@ -1,8 +1,15 @@
 /*-- Imported from: https://javascriptbook.com/code/c04/js/example.js --*/
 
-window.onload(function() {
-var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The result with be rounded to the nearest whole number.", "7");
-});
+
+function docReady(userSelection) { // see if DOM is already available
+  if (document.readyState === "complete" || document.readyState === "interactive") {
+      setTimeout(userSelection, 100); //100ms timeout
+  } else {
+      document.addEventListener("DOMContentLoaded", function() {
+        var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The result with be rounded to the nearest whole number.", "7");
+      }); //Rerun prompt
+  }
+}
 
  function integerCheck(input) {  //Checks if user input is an integer
   if (isNaN(input) == false && input <= 10 && input > 0) {  //Input is an integer and within range
