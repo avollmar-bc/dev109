@@ -6,7 +6,7 @@ var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The 
 
   if (isNaN(input) == false && input >10) {
     alert("BETWEEN 0 and 10, silly. Try again.");
-    window.reload();
+    window.location.reload();
     return false;
   }
 
@@ -16,7 +16,6 @@ var userSelection = prompt("Please enter a number between 0 and 10. \nNOTE: The 
     var result = Math.round(input);  //Round to nearest whole number
     return result; //Returns sanitized input
   }
-
 }
 
 var table = inputCheck(userSelection);
