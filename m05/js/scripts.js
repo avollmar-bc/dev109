@@ -36,6 +36,7 @@ if (integerCheck(userSelection)) {
     i++;
 }
 
-// Write the message into the page
-var el = document.getElementById('blackboard');
-el.innerHTML = msg;
+  // Write the message into the page
+  var el = document.getElementById('blackboard');
+  el.innerHTML = msg;
+}
