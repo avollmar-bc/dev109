@@ -11,11 +11,11 @@ function docReady(userSelction) { // see if DOM is already available
 }
 
  function integerCheck(input) {  //Checks if user input is an integer
-  if (isNaN(input) == false) {  //Input is an integer
+  if (isNaN(input) == false && input <= 10) {  //Input is an integer
     input = Math.round(input);  //Round to nearest whole number
     return input; //Returns sanitized input
   } else {  //Contains characters other than numbers
-    alert("That's not an integer, silly. Try again");
+    alert("Read the instructions, silly. Try again");
     window.location.reload();
   }
 }
