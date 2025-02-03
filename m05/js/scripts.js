@@ -19,7 +19,8 @@ function docReady(userSelction) {
     input = Math.round(userSelection);  //Round to nearest whole number
     return input; //Returns sanitized input
   } else {  //Contains characters other than numbers
-    return false;
+    alert("That's not an integer, silly");
+    userSelection;
   }
 }
 
@@ -38,7 +39,3 @@ if (integerCheck(userSelection)) {
 // Write the message into the page
 var el = document.getElementById('blackboard');
 el.innerHTML = msg;
-} else {
-  alert("You know that's not a number, silly.");
-  userSelection;
-}
