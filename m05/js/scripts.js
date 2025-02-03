@@ -1,9 +1,18 @@
 /*-- Imported from: https://javascriptbook.com/code/c04/js/example.js --*/
 
-if (document.readyState == 'complete') {}
-  var userSelection = prompt("Please enter a number between 0 and 10", "7");
-  userSelection;
-}
+var userSelection = prompt("Please enter a number between 0 and 10", "7");
+
+function docReady(userSelction) {
+  // see if DOM is already available
+  if (document.readyState === "complete" || document.readyState === "interactive") {
+      // call on next available tick
+      setTimeout(userSelection, 100);
+  } else {
+      document.addEventListener("DOMContentLoaded", userSelection);
+  }
+}    
+
+
 var integerCheck = function(input) {  //Checks if user input is an integer
   var isInt = /^\d+$/.test(input);  //Tests input against a regex
   if (isInt) {  //Input is an integer
