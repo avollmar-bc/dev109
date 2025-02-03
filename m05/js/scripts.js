@@ -14,12 +14,11 @@ function docReady(userSelction) {
 
 
  function integerCheck(userSelection) {  //Checks if user input is an integer
-  var isInt = /^\d+$/.test(userSelection);  //Tests input against a regex
-  if (isInt) {  //Input is an integer
+  if (isNaN(userSelection = false)) {  //Input is an integer
     input = Math.round(userSelection);  //Round to nearest whole number
     return input; //Returns sanitized input
   } else {  //Contains characters other than numbers
-    alert("That's not an integer, silly");
+    alert("That's not an integer, silly. Try again");
     window.location.reload();
   }
 }
