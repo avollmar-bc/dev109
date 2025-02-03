@@ -11,6 +11,8 @@ function docReady() { // see if DOM is already available
   }
 }
 
+docReady();
+
  function integerCheck(input) {  //Checks if user input is an integer
   if (isNaN(input) == false && input <= 10 && input > 0) {  //Input is an integer and within range
     input = Math.round(input);  //Round to nearest whole number
