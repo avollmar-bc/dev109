@@ -1,6 +1,6 @@
 /*-- Imported from: https://javascriptbook.com/code/c04/js/example.js --*/
 
-var userSelection = prompt("Please enter a number between 0 and 10", "7");
+var userSelection = prompt("Please enter a number between 0 and 10n \n NOTE: The result with be rounded", "7");
 
 function docReady(userSelction) {
   // see if DOM is already available
@@ -13,9 +13,9 @@ function docReady(userSelction) {
 }    
 
 
- function integerCheck(userSelection) {  //Checks if user input is an integer
-  if (isNaN(userSelection) == false) {  //Input is an integer
-    input = Math.round(userSelection);  //Round to nearest whole number
+ function integerCheck(input) {  //Checks if user input is an integer
+  if (isNaN(input) == false) {  //Input is an integer
+    input = Math.round(input);  //Round to nearest whole number
     return input; //Returns sanitized input
   } else {  //Contains characters other than numbers
     alert("That's not an integer, silly. Try again");
