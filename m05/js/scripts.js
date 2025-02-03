@@ -13,7 +13,7 @@ function docReady(userSelction) {
 }    
 
 
-var integerCheck = function(input) {  //Checks if user input is an integer
+ function integerCheck(input) {  //Checks if user input is an integer
   var isInt = /^\d+$/.test(input);  //Tests input against a regex
   if (isInt) {  //Input is an integer
     input = Math.round(input);  //Round to nearest whole number
