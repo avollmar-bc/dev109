@@ -127,7 +127,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
                         
                 }
                 
-                rLine +="</p>";
+                tLine +="</p>";
             }
 
             document.getElementById("topShape").innerHTML = tLine;
