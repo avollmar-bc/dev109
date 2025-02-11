@@ -115,21 +115,21 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         function topShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var tLine = "";
             for (i = 0; i < pHeight*2; i++) {
-                rLine += "<p>";
+                tLine += "<p>";
 
                 for (j = 0; j <=i; j++) {
                     if (j%2)
                         //even
-                        rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+                        tLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
                         else
                         //odd
-                        rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+                        tLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
                         
                 }
                 
                 rLine +="</p>";
             }
 
-            document.getElementById("topShape").innerHTML = rLine;
+            document.getElementById("topShape").innerHTML = tLine;
 
         }
