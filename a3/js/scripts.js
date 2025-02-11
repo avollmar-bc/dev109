@@ -116,8 +116,8 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         function upperShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
             for (i = 0; i <= pHeight*2; i++) {
-                rLine += "<p>";
                 if (i%2) { //Only populate on even numbers
+                    rLine += "<p>";
                     for (j = 0; j <=i; j++) {
                         if (j%2)
                             //even
@@ -127,8 +127,9 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
                             rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
                             
                     }
+                    rLine +="</p>";
                 }
-                rLine +="</p>";
+
             }
 
             document.getElementById("upperShape").innerHTML = rLine;
@@ -139,8 +140,9 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
             var fullWidth = pHeight * 2;
             for (i = fullWidth; i >= 0; i--) {
-                rLine += "<p>";
+
                 if (i%2) { //Only populate on even numbers
+                    rLine += "<p>";
                     console.log(i);
                     for (j = 0; j <= i; j++) {
                         if (j%2)
@@ -151,8 +153,9 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
                         rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
                         
                     }
+                    rLine +="</p>";
                 }
-                rLine +="</p>";
+
             }
 
             document.getElementById("lowerShape").innerHTML = rLine;
