@@ -116,18 +116,19 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         function upperShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
             for (i = 0; i < pHeight*2; i++) {
-                rLine += "<p>";
+                if (i%2) { //Only populate on even numbers
+                    rLine += "<p>";
 
-                for (j = 0; j <=i; j++) {
-                    if (j%2)
-                        //even
-                        rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
-                        else
-                        //odd
-                        rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
-                        
+                    for (j = 0; j <=i; j++) {
+                        if (j%2)
+                            //even
+                            rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+                            else
+                            //odd
+                            rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+                            
+                    }
                 }
-                
                 rLine +="</p>";
             }
 
@@ -138,6 +139,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         function lowerShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
             for (i=pHeight*2; i > 0; i--) {
+                if (i%2) { //Only populate on even numbers
                 rLine += "<p>";
 
                 for (j = 0; j < i; j++) {
@@ -151,6 +153,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
                     rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
                     
                     }
+                }
                 rLine +="</p>";
             }
 
