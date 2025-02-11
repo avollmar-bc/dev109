@@ -17,13 +17,13 @@
 label {
     display: inline-block;
     margin-bottom: 5px;
+    font-family: 'FreeUniversalRegular';
+    font-weight: normal;
+    font-style: normal;
 }
 
 input, select {
     display: inline-block;
     margin-bottom: 15px;
     min-width: 30%;
-    font-family: 'FreeUniversalRegular';
-    font-weight: normal;
-    font-style: normal;
 }
