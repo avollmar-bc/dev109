@@ -137,7 +137,8 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
 
         function lowerShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
-            for (i = pHeight*2; i >= 0; i--) {
+            var fullWidth = pHeight * 2;
+            for (i = fullWidth; i >= 0; i--) {
                 rLine += "<p>";
                 if (i%2) { //Only populate on even numbers
                     console.log(i);
