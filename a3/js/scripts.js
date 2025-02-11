@@ -9,7 +9,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
     downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
     upperShape(pHeight, pColorEven, pColorOdd, pSymbol);
-    lowerShape(pHeight, pColorEven, pColorOdd, pSymbol));
+    lowerShape(pHeight, pColorEven, pColorOdd, pSymbol);
     }
 
     //Upper Right Area
