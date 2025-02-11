@@ -15,14 +15,19 @@
     margin-right: auto;
     max-width: 350px;
     padding: 25px 40px;
-    border: 1px solid #666;
+    border: 1px solid #578E7E;
     border-radius: 5px;
     box-shadow: 2px 3px 10px;
+    background-color: #FFFAEC;
 }
 
 .results {
     text-align: center;
 
+}
+
+body {
+    background-color: #F5ECD5;
 }
 
 h1, h3 {
