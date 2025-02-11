@@ -140,10 +140,8 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
             var fullWidth = pHeight * 2;
             for (i = fullWidth; i >= 0; i--) {
-
                 if (i%2) { //Only populate on even numbers
                     rLine += "<p>";
-                    console.log(i);
                     for (j = 0; j <= i; j++) {
                         if (j%2)
                         //even
