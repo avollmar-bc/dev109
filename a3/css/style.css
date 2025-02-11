@@ -20,12 +20,24 @@
     box-shadow: 2px 3px 10px;
 }
 
+.results {
+    text-align: center;
+
+}
+
+h1, h3 {
+    font-family: 'LemonRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
 label {
     display: inline-block;
     margin-bottom: 5px;
     font-family: 'AvrileSansUIRegular';
     font-weight: normal;
     font-style: normal;
+    font-size: 18px;
 }
 
 input, select {
