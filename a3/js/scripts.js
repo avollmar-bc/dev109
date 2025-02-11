@@ -8,7 +8,8 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     downRight(pHeight, pColorEven, pColorOdd, pSymbol);
     upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
     downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
-    topShape(pHeight, pColorEven, pColorOdd, pSymbol);
+    upperShape(pHeight, pColorEven, pColorOdd, pSymbol);
+    lowerShape(pHeight, pColorEven, pColorOdd, pSymbol));
     }
 
     //Upper Right Area
@@ -112,24 +113,47 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         }
 
         //Top Area
-        function topShape(pHeight, pColorEven, pColorOdd, pSymbol) {
-            var tLine = "";
+        function upperShape(pHeight, pColorEven, pColorOdd, pSymbol) {
+            var rLine = "";
             for (i = 0; i < pHeight*2; i++) {
-                tLine += "<p>";
+                rLine += "<p>";
 
                 for (j = 0; j <=i; j++) {
                     if (j%2)
                         //even
-                        tLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+                        rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
                         else
                         //odd
-                        tLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+                        rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
                         
                 }
                 
-                tLine +="</p>";
+                rLine +="</p>";
             }
 
-            document.getElementById("topShape").innerHTML = tLine;
+            document.getElementById("upperShape").innerHTML = rLine;
+
+        }
+
+        function lowerShape(pHeight, pColorEven, pColorOdd, pSymbol) {
+            var rLine = "";
+            for (i=pHeight*2; i > 0; i--) {
+                rLine += "<p>";
+
+                for (j = 0; j < i; j++) {
+        
+                    //Is the position even or odd so we change the color
+                    if (j%2)
+                    //even
+                    rLine +="<span style='color:" + pColorEven + ";'>" + pSymbol +"</span>";
+                    else
+                    //odd
+                    rLine +="<span style='color:" + pColorOdd + ";'>" + pSymbol +"</span>";
+                    
+                    }
+                rLine +="</p>";
+            }
+
+            document.getElementById("lowerShape").innerHTML = rLine;
 
         }
