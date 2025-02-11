@@ -115,7 +115,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         //Top Area
         function upperShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
-            for (i = 0; i < pHeight*2; i++) {
+            for (i = 0; i <= pHeight*2; i++) {
                 rLine += "<p>";
                 if (i%2 || i == 1) { //Only populate on even numbers
                     for (j = 0; j <=i; j++) {
@@ -137,7 +137,7 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
 
         function lowerShape(pHeight, pColorEven, pColorOdd, pSymbol) {
             var rLine = "";
-            for (i = pHeight*2; i > 0; i -= 2) {
+            for (i = pHeight*2; i >= 0; i -= 2) {
                 rLine += "<p>";
                 if (i%2 || i == pHeight) { //Only populate on even numbers
                     console.log(i);
