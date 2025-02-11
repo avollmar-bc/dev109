@@ -11,7 +11,10 @@
   <div id="wrapper">
     <h1>Alan Vollmar</h1>
     <h3>let's Shape Up</h3>
-    <form id="shapeForm">
+    <form id="shapeForm" onSubmit="createRhombus(document.getElementById('rHeight').value,
+    document.getElementById('colorEven').value,
+    document.getElementById('colorOdd').value,
+    document.getElementById('symbol').value);">
       <label>What is the size of Rhombus?</label><br>
       <input type="text" id="rHeight" value="5" size="5">
       <br>
