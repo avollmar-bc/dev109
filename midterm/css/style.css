@@ -22,6 +22,13 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
+
+  .wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+  }
   
   .header,
   .footer {
