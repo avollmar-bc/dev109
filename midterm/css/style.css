@@ -1,4 +1,6 @@
 /*-- Sitewide Styles --*/
+/*-- https://coolors.co/visualizer/f4d06f-ff8811-9dd9d2-fff8f0-392f5a --*/
+
 
 /*-- Sticky footer Styles --*/
 
@@ -37,13 +39,13 @@
   
   .page-body {
     padding: 20px;
-    background-color: #F2EFE7;
+    background-color: #EFEFEF;
   }
 
 /*-- Header Styles --*/
 
 .header {
-    background-color: #2973B2;
+    background-color: #FFFFFF;
 }
 
 .header-content {
@@ -55,7 +57,11 @@
 /*-- Footer Styles --*/
 
 .footer {
-    background-color: #9ACBD0;
+    background-color: #8E9B90;
+}
+
+.footer p {
+    color: #666666;
 }
 
 /*-- Menu Styles --*/
