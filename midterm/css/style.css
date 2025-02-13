@@ -68,6 +68,10 @@
     color: #8E9B90;
 }
 
+.header-logo a {
+    color: #8E9B90;
+}
+
 .header-logo span {
     display: inline-block;
     margin-top: 10px;
