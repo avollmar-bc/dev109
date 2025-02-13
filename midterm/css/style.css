@@ -32,21 +32,30 @@
   
   .header,
   .footer {
-    background-color: rgb(75 70 74);
-    color: #fff;
     padding: 20px;
   }
   
   .page-body {
     padding: 20px;
+    background-color: #F2EFE7;
   }
 
 /*-- Header Styles --*/
 
-  .header-content {
+.header {
+    background-color: #2973B2;
+}
+
+.header-content {
     display: inline-block;
     text-align: center;
     width: 100%;
+}
+
+/*-- Footer Styles --*/
+
+.footer {
+    background-color: #9ACBD0;
 }
 
 /*-- Menu Styles --*/
