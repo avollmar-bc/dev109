@@ -58,6 +58,7 @@
 
 .footer {
     background-color: #8E9B90;
+    text-align: right;
 }
 
 .footer p {
@@ -88,4 +89,14 @@
 .header-menu ul li a {
     margin-right: 10px;
     padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.header-menu ul li a:hover {
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #EFEFEF;
 }
