@@ -1,1 +1,38 @@
 /*-- Sitewide Styles --*/
+
+/*-- Sticky footer Styles --*/
+
+* {
+    box-sizing: inherit;
+  }
+  
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    font: 1.2em sans-serif;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .page-header,
+  .page-footer {
+    background-color: rgb(75 70 74);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .page-body {
+    padding: 20px;
+  }
+  
+  .page-body p {
+    border: 1px solid grey;
+  }
