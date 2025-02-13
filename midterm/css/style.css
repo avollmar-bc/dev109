@@ -14,16 +14,17 @@
   body {
     height: 100%;
     font: 1.2em sans-serif;
+    margin: 0; /* Clean this up later */
   }
   
-  .wrapper {
+  .container {
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
   
-  .page-header,
-  .page-footer {
+  .header,
+  .footer {
     background-color: rgb(75 70 74);
     color: #fff;
     padding: 20px;
