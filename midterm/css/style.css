@@ -38,7 +38,16 @@
     border: 1px solid grey;
   }
 
-  /*-- Menu Styles --*/
+
+/*-- Header Styles --*/
+
+  .header-content {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+/*-- Menu Styles --*/
 
 .header-content {
     display: inline-block;
@@ -55,7 +64,7 @@
 
 }
 
-.header-menu ul li {
+.header-menu ul li a {
     display: inline-block;
     margin-right: 10px;
     padding: 10px 15px;
