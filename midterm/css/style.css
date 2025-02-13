@@ -88,6 +88,7 @@
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 10px;
+    color: #93C0A4;
 }
 
 .header-menu ul li a:hover {
@@ -95,6 +96,6 @@
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 10px;
-    color: #CCCCCC;
+    color: #FFFFFF;
     background-color: #93C0A4;
 }
