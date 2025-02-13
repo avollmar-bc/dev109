@@ -64,7 +64,13 @@
     font-family: 'BebasNeueBold';
     font-weight: normal;
     font-style: normal;
+    font-size: 42px;
     color: #8E9B90;
+}
+
+.header-logo span {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 /*-- Footer Styles --*/
