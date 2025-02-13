@@ -46,6 +46,8 @@
 
 .header {
     background-color: #FFFFFF;
+    border-bottom: 1px solid #bdbdbd;
+
 }
 
 .header-content {
@@ -67,12 +69,6 @@
 
 /*-- Menu Styles --*/
 
-.header-content {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid #bdbdbd;
-}
 
 .header-menu {
     padding-left: 0;
