@@ -153,6 +153,7 @@ h3 {
 .title-underline {
   width: 33%;
   color: #8E9B90;
+  float: left;
 }
 
 .wrapper-home {
