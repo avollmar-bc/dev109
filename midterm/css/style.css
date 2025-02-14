@@ -123,15 +123,11 @@ h3 {
     float: right;
 }
 
-.header-menu ul {
-
-}
-
-.header-menu ul li {
+.header-menu li {
     display: inline-block;
 }
 
-.header-menu ul li a {
+.header-menu li a {
     margin-right: 10px;
     padding: 10px 15px;
     text-decoration: none;
@@ -139,7 +135,7 @@ h3 {
     color: #8E9B90;
 }
 
-.header-menu ul li a:hover {
+.header-menu li a:hover {
     margin-right: 10px;
     padding: 10px 15px;
     text-decoration: none;
