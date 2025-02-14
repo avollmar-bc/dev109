@@ -147,3 +147,9 @@ h3 {
 .header-menu .active {
   box-shadow: 2px 3px 2px #8E9B90;
 }
+
+/*-- Body/Content Styles --*/
+
+.wrapper-home {
+  text-align: center;
+}
