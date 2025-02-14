@@ -5,51 +5,63 @@
 /*-- General/Sticky footer Styles --*/
 
 * {
-    box-sizing: inherit;
-  }
-  
-  html {
-    height: 100%;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100%;
-    font: 1.2em sans-serif;
-    margin: 0; /* Clean this up later */
-    font-family: 'OpenSansYtoKRegular';
-    font-weight: normal;
-    font-style: normal;
-  }
+  box-sizing: inherit;
+}
 
-  h1, h2, h3 {
-    font-family: 'BebasNeueBold';
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .container {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 
-  .wrapper {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 15px;
-  }
-  
-  .header,
-  .footer {
-    padding: 20px;
-  }
-  
-  .page-body {
-    padding: 20px;
-    background-color: #EFEFEF;
-  }
+body {
+  height: 100%;
+  font: 1.2em sans-serif;
+  margin: 0; /* Clean this up later */
+  font-family: 'OpenSansYtoKRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'BebasNeueBold';
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 15px;
+}
+
+.header,
+.footer {
+  padding: 20px;
+}
+
+.page-body {
+  padding: 20px;
+  background-color: #EFEFEF;
+}
 
 /*-- Header Styles --*/
 
