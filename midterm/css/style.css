@@ -150,6 +150,11 @@ h3 {
 
 /*-- Body/Content Styles --*/
 
+.title-underline {
+  width: 33%;
+  color: #8E9B90;
+}
+
 .wrapper-home {
   text-align: center;
 }
