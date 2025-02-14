@@ -73,74 +73,77 @@ h3 {
 /*-- Header Styles --*/
 
 .header {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #cccccc;
-
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #cccccc;
 }
 
 .header-content {
-    max-width: 1350px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-logo {
-    display: inline-block;
-    font-family: 'BebasNeueBold';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 42px;
-    color: #8E9B90;
+  display: inline-block;
+  font-family: 'BebasNeueBold';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 42px;
+  color: #8E9B90;
 }
 
 .header-logo a {
-    color: #8E9B90;
+  color: #8E9B90;
 }
 
 .header-logo span {
-    display: inline-block;
-    margin-top: 5px;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 /*-- Footer Styles --*/
 
 .footer {
-    background-color: #8E9B90;
-    text-align: right;
+  background-color: #8E9B90;
+  text-align: right;
 }
 
 .footer span {
-    color: black;
-    font-size: 14px;
+  color: black;
+  font-size: 14px;
 }
 
 /*-- Menu Styles --*/
 
 
 .header-menu {
-    padding-left: 0;
-    margin: 12px 0 0 0;
-    float: right;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  float: right;
 }
 
 .header-menu li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header-menu li a {
-    margin-right: 10px;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 10px;
-    color: #8E9B90;
+  margin-right: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #8E9B90;
 }
 
 .header-menu li a:hover {
-    margin-right: 10px;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 10px;
-    color: #FFFFFF;
-    background-color: #8E9B90;
-    transition: all 200ms ease-in-out;
+  margin-right: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #8E9B90;
+  transition: all 200ms ease-in-out;
+}
+
+.header-menu .active {
+  box-shadow: 2px 3px 2px #8E9B90;
 }
