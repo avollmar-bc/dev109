@@ -45,6 +45,8 @@ h3 {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  background-image: url('images/site-bkgd.jpg');
+  background-size: cover;
 }
 
 .wrapper {
