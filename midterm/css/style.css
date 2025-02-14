@@ -199,6 +199,7 @@ img.featured-image:hover {
 
 .form-area input, .form-area textarea {
   width: 100%;
+  padding: 5px;
 }
 
 .form-area input[type=submit] {
