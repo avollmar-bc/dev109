@@ -176,3 +176,7 @@ h3 {
   display: table;
   clear: both;
 }
+
+.img .featured-image {
+  border: 1px solid #8E9B90;
+}
