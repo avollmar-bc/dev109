@@ -2,7 +2,7 @@
 /*-- https://coolors.co/visualizer/f4d06f-ff8811-9dd9d2-fff8f0-392f5a --*/
 
 
-/*-- Sticky footer Styles --*/
+/*-- General/Sticky footer Styles --*/
 
 * {
     box-sizing: inherit;
@@ -18,6 +18,12 @@
     font: 1.2em sans-serif;
     margin: 0; /* Clean this up later */
     font-family: 'OpenSansYtoKRegular';
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1, h2, h3 {
+    font-family: 'BebasNeueBold';
     font-weight: normal;
     font-style: normal;
   }
