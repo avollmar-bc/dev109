@@ -177,6 +177,13 @@ h3 {
   clear: both;
 }
 
-.img .featured-image {
+img .featured-image {
   border: 1px solid #8E9B90;
+  border-radius: 5px;
+
+}
+
+img .featured-image:hover {
+  box-shadow: 2px 3px 2px #666;
+  transition: all 200ms ease-in-out;
 }
