@@ -188,6 +188,11 @@ img.featured-image:hover {
   transition: all 200ms ease-in-out;
 }
 
+.img-gallery img {
+  margin-top:25px;
+  width: 281px;
+}
+
 /*-- Form Styles --*/
 
 .form-area {
