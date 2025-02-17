@@ -70,15 +70,10 @@ p + h2 {
   border-bottom: 1px solid #fff; 
   padding: 10px 0;}
 
-#hotel1 { /*-- pseudo selectors - let's make this dynamic --*/
+#info div:first-child { /*-- pseudo selectors - let's make this dynamic --*/
   margin-top: 1em; 
   border-top: 1px solid #fff; 
   padding-top: 1em;}
-
-#hotel2 {
-  margin-top: 1em; 
-  padding-top: 1em;
-}  
 
 #info div:last-child { /*-- More pseudo selectors --*/
   border-bottom: 1px solid #fff; 
