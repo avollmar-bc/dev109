@@ -70,11 +70,11 @@ p + h2 {
   border-bottom: 1px solid #fff; 
   padding: 10px 0;}
 
-#hotel1 {
+#hotel1, #hotel2 { /*-- Moved up hotel2 and replaced with hotel3 - AV --*/
   margin-top: 1em; 
   border-top: 1px solid #fff; 
   padding-top: 1em;} 
-#hotel2 {
+#hotel3 {
   border-bottom: 1px solid #fff; 
   padding-bottom: 1em;}
 
