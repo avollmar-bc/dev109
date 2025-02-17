@@ -28,7 +28,7 @@ function Hotel(name, rooms, booked) {
 
   //Third instance - Alan V
   var details3 = parkHotel.name + ' rooms: ';
-      details3 += sunsetHotel.checkAbailability();
+      details3 += sunsetHotel.checkAvailability();
   var elHotel3 = document.getElementById('hotel3');
   elHotel3.textContent = details3;
   
