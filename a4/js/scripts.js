@@ -37,7 +37,7 @@ function validateForm() {
     var alphaTest = /^[a-zA-Z]{1,20}$/;
 
 
-    var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/
+    var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
     // old test - var emailTest = /^\S+@\S+\.\S+$/;
 
     //First Name Field
