@@ -15,3 +15,8 @@
 input, select {
     display: block;
 }
+
+.errorMessage {
+    color: red;
+    font-style: bold;    
+}
