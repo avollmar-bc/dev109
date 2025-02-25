@@ -39,8 +39,11 @@ function validateForm() {
         isValid = false;
     }
 
-    firstName.addEventListener("input", function() {
-        document.getElementById("firstName-error").textContent = "";
-        firstNameError.classList.remove("active-error");
-    });
 }
+
+//Form clearing
+
+firstName.addEventListener("input", function() {
+    firstNameError.textContent = "";
+    firstNameError.classList.remove("active-error");
+});
