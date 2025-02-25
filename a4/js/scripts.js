@@ -14,13 +14,33 @@ function validateForm() {
     var zipCode = document.getElementById("zipCode").value;
     var comments = document.getElementById("comments").value;
 
+    //Error Fields
+    var firstNameError = document.getElementById("firstName-error");
+    var lastNameError = document.getElementById("lastName-error");
+    var userEmailError = document.getElementById("userEmail-error");
+    var phoneError = document.getElementById("phone-error");
+    var userNameError = document.getElementById("userName-error");
+    var passwordError = document.getElementById("password-error");
+    var addressError = document.getElementById("address-error");
+    var cityNameError = document.getElementById("cityName-error");
+    var statenameError = document.getElementById("stateName-error");
+    var countryNameError = document.getElementById("countryName-error");
+    var zipCodeError = document.getElementById("zipCode-error");
+    var commentsError = document.getElementById("comments-error");
+
     //Blanket validation flag
     var isValid = true;
 
 
     //First Name Field
     if (firstName==="null" || firstName==="" || firstName.length > 20) {
-        document.getElementById('firstName-error').innerHTML = 'The First Name field is required and may only have up to 20 characters.';
+        firstNameError.innerHTML = 'The First Name field is required and may only have up to 20 characters.';
+        firstNameError.classList.add("active-error");
         isValid = false;
     }
+
+    firstName.addEventListener("input", function() {
+        document.getElementById("firstName-error").textContent = "";
+        firstNameError.classList.remove("active-error");
+    });
 }
