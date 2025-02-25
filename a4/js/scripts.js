@@ -39,14 +39,27 @@ function validateForm() {
         isValid = false;
     }
 
+    //Last Name Field
+    if (LastName==="null" || LastName ==="" || LastName.length > 20) {
+        LastNameError.innerHTML = 'The First Name field is required and may only have up to 20 characters.';
+        LastNameError.classList.add("active-error");
+        isValid = false;
+    }
+
 }
 
 //Form Error Cleanup
 
-
-
+//First Name Field
 document.getElementById("firstName").addEventListener("input", function() {
     var firstNameError = document.getElementById("firstName-error");
     firstNameError.textContent = "";
     firstNameError.classList.remove("active-error");
+});
+
+//Last Name Field
+document.getElementById("firstName").addEventListener("input", function() {
+    var LastNameError = document.getElementById("firstName-error");
+    LastNameError.textContent = "";
+    LastNameError.classList.remove("active-error");
 });
