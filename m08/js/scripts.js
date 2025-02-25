@@ -2,6 +2,7 @@ function addListItem(itemName) {
 
     // Blank input - kill function
     if (itemName == '') {
+        alert('Add an item before submitting, dingdong.');
         return false;
     }
 
@@ -19,4 +20,7 @@ function addListItem(itemName) {
 
     // Insert the new element into its position.
     position.appendChild(newEl);
+
+    var formField = document.getElementById("formInput");
+    formField.value = '';
 }
