@@ -12,6 +12,6 @@
     border-radius: 5px;
 }
 
-input {
+input, select {
     display: block;
 }
