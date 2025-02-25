@@ -12,8 +12,8 @@
       <ul id="todo"><li id="one" class="hot"><em>fresh</em> figs</li><li id="two" class="hot">pine nuts</li><li id="three" class="hot">honey</li><li id="four">balsamic vinegar</li></ul>
       <div id="addItem">
         <form class="addItemForm" action="return false;">
-            <input type="text" placeholder="Add Item...">
-            <button type="submit" onclick="DO FUNCTION">Submit</button>
+            <input id="itemInput" type="text" placeholder="Add Item...">
+            <button type="submit" onclick='addListItem(document.getElementById("itemInput").value)'>Submit</button>
         </form>
       </div>
     </div>
