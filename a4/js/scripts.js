@@ -74,6 +74,7 @@ firstName.addEventListener("blur", (event) => {
         firstNameError.classList.add("active-error");
         isValid = false;
     } else {
+        firstNameError.innerHTML = '';
         firstNameError.classList.remove("active-error");
         isValid = true;
     }
