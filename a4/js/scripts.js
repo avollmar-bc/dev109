@@ -1,5 +1,4 @@
-function validateForm(e) {
-    e.preventDefault();
+function validateForm() {
 
     //Collect field values
     var firstName = document.getElementById("firstName").value;
