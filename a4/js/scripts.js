@@ -58,7 +58,7 @@ document.getElementById("firstName").addEventListener("input", function() {
 });
 
 //Last Name Field
-document.getElementById("firstName").addEventListener("input", function() {
+document.getElementById("lastName").addEventListener("input", function() {
     var lastNameError = document.getElementById("lastName-error");
     lastNameError.textContent = "";
     lastNameError.classList.remove("active-error");
