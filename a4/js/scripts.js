@@ -65,6 +65,6 @@ function blurValidation() {
     console.log(event.target.value);
 }
 
-firstName.addEventListener("blur" function() {
+firstName.addEventListener("blur", (event) => {
     console.log(this.value);
 });
