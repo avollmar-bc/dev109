@@ -1,7 +1,7 @@
 function validateForm() {
 
     //Collect field values
-    var firstName = document.getElementById("firstName");
+    var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
     var userEmail = document.getElementById("userEmail").value;
     var phone = document.getElementById("phone").value;
@@ -65,6 +65,7 @@ function blurValidation() {
     console.log(event.target.value);
 }
 
+var firstName = document.getElementById("firstName");
 firstName.addEventListener("blur", (event) => {
-    console.log(this.value);
+    console.log(firstName.value);
 });
