@@ -1,4 +1,5 @@
-function validateForm() {
+function validateForm(e) {
+    e.preventDefault();
 
     //Collect field values
     var firstName = document.getElementById("firstName").value;
@@ -17,4 +18,10 @@ function validateForm() {
     //Blanket validation flag
     var isValid = true;
 
+
+    //First Name Field
+    if (firstName==="null" || firstName==="" || firstName.length > 20) {
+        document.getElementById('firstName-error').innerHTML = 'The First Name field is required and may only have up to 20 characters.';
+        isValid = false;
+    }
 }
