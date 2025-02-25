@@ -31,17 +31,21 @@ function validateForm() {
     //Blanket validation flag
     var isValid = true;
 
+    //Regexs
+
+    //Alpha only - up to 20 characters
+    var alphaTest = /^[a-zA-Z]{1,20}$/;
 
     //First Name Field
-    if (firstName==="null" || firstName==="" || firstName.length > 20) {
-        firstNameError.innerHTML = 'The First Name field is required and may only have up to 20 characters.';
+    if (!alphaTest.test(firstName)) {
+        firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         firstNameError.classList.add("active-error");
         isValid = false;
     }
 
     //Last Name Field
-    if (lastName ==="null" || lastName ==="" || lastName.length > 20) {
-        lastNameError.innerHTML = 'The Last Name field is required and may only have up to 20 characters.';
+    if (!alphaTest.test(lastName)) {
+        lastNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         lastNameError.classList.add("active-error");
         isValid = false;
     }
