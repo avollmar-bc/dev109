@@ -1,3 +1,7 @@
+#container {
+    padding: 10% 5%;
+}
+
 .form-wrapper {
     max-width: 450px;
     display: block;
