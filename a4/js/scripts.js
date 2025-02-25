@@ -60,6 +60,10 @@ function validateForm() {
 
 }
 
+//Regex Testing
+var alphaTest = /^[a-zA-Z]{1,20}$/;
+var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
+
 //First Name Validation
 var firstName = document.getElementById("firstName");
 firstName.addEventListener("blur", (event) => {
