@@ -11,39 +11,39 @@
         <div class="form-wrapper">
             <form id="validationForm" action="" onsubmit="return false;">
                 <label for="firstName">First Name</label><br/>
-                <input id="firstName" type="text" name="firstName" maxlength="20" placeholder="First Name"><br/>
+                <input id="firstName" type="text" name="firstName" maxlength="20" placeholder="First Name" required><br/>
                 <span  id="firstName-error" class="errorMessage"></span>
 
                 <label for="lastName">Last Name</label><br/>
-                <input id="lastName" type="text" name="lastName" maxlength="20"><br/>
+                <input id="lastName" type="text" name="lastName" maxlength="20" required><br/>
                 <span  id="lastName-error" class="errorMessage"></span>
 
                 <label for="userEmail">Email</label><br/>
-                <input id="userEmail" type="email" name="userEmail"><br/>
+                <input id="userEmail" type="email" name="userEmail" required><br/>
                 <span  id="firstName-error" class="errorMessage"></span>
 
                 <label for="phone">Phone</label><br/>
-                <input id="phone" type="tel" name="phone" maxlength="15"><br/>
+                <input id="phone" type="tel" name="phone" maxlength="15" required><br/>
                 <span  id="phone-error" class="errorMessage"></span>
 
                 <label for="userName">User Name</label><br/>
-                <input id="userName" type="text" name="userName" maxlength="12"><br/>
+                <input id="userName" type="text" name="userName" maxlength="12" required><br/>
                 <span  id="userName-error" class="errorMessage"></span>
 
                 <label for="password">Password</label><br/>
-                <input id="password" type="password" name="password" maxlength="7"><br/>
+                <input id="password" type="password" name="password" maxlength="7" required><br/>
                 <span  id="password-error" class="errorMessage"></span>
 
                 <label for="address">Address</label><br/>
-                <input id="address" type="text" name="address"><br/>
+                <input id="address" type="text" name="address" required><br/>
                 <span  id="address-error" class="errorMessage"></span>
 
                 <label for="cityName">City</label><br/>
-                <input id="cityName" type="text" name="cityName"><br/>
+                <input id="cityName" type="text" name="cityName" required><br/>
                 <span  id="cityName-error" class="errorMessage"></span>
 
                 <label for="stateName">State</label><br/>
-                <select id="stateName" name="stateName">
+                <select id="stateName" name="stateName" required>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -99,7 +99,7 @@
                 <span  id="stateName-error" class="errorMessage"></span>
 
                 <label for="countryName">Country</label><br/>
-                <select id="countryName" name="countryName">
+                <select id="countryName" name="countryName" required>
                     <option value="United States" selected="selected">United States</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
@@ -348,7 +348,7 @@
                 <span  id="countryName-error" class="errorMessage"></span>
 
                 <label for="zipCode">Zipcode</label><br/>
-                <input id="zipCode" type="number" name="zipCode" maxlength="5"><br/>
+                <input id="zipCode" type="number" name="zipCode" maxlength="5" required><br/>
                 <span  id="zipCode-error" class="errorMessage"></span>
 
                 <label for="comments">Comments</label><br/>
