@@ -14,20 +14,6 @@ function validateForm() {
     var zipCode = document.getElementById("zipCode").value;
     var comments = document.getElementById("comments").value;
 
-    //Error Fields
-    var firstNameError = document.getElementById("firstName-error");
-    var lastNameError = document.getElementById("lastName-error");
-    var userEmailError = document.getElementById("userEmail-error");
-    var phoneError = document.getElementById("phone-error");
-    var userNameError = document.getElementById("userName-error");
-    var passwordError = document.getElementById("password-error");
-    var addressError = document.getElementById("address-error");
-    var cityNameError = document.getElementById("cityName-error");
-    var statenameError = document.getElementById("stateName-error");
-    var countryNameError = document.getElementById("countryName-error");
-    var zipCodeError = document.getElementById("zipCode-error");
-    var commentsError = document.getElementById("comments-error");
-
     //Blanket validation flag
     var isValid = true;
 
@@ -41,7 +27,21 @@ function validateForm() {
 
 }
 
-//Form clearing
+//Form Error Cleanup
+
+//Error Fields
+var firstNameError = document.getElementById("firstName-error");
+var lastNameError = document.getElementById("lastName-error");
+var userEmailError = document.getElementById("userEmail-error");
+var phoneError = document.getElementById("phone-error");
+var userNameError = document.getElementById("userName-error");
+var passwordError = document.getElementById("password-error");
+var addressError = document.getElementById("address-error");
+var cityNameError = document.getElementById("cityName-error");
+var statenameError = document.getElementById("stateName-error");
+var countryNameError = document.getElementById("countryName-error");
+var zipCodeError = document.getElementById("zipCode-error");
+var commentsError = document.getElementById("comments-error");
 
 firstName.addEventListener("input", function() {
     firstNameError.textContent = "";
