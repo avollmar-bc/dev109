@@ -35,6 +35,7 @@ function validateForm() {
 
     //Alpha only - up to 20 characters
     var alphaTest = /^[a-zA-Z]{1,20}$/;
+    var emailTest = /^\S+@\S+\.\S+$/;
 
     //First Name Field
     if (!alphaTest.test(firstName)) {
@@ -50,20 +51,10 @@ function validateForm() {
         isValid = false;
     }
 
+    //Email Field
+    if (!emailTest.test(userEmail))
+        userEmailError.innerHTML = 'The Email field must be formatted as an email address.';
+        userEmailError.classList.add("active-error");
+        isValid = false;
+
 }
-
-//Form Error Cleanup
-
-//First Name Field
-document.getElementById("firstName").addEventListener("input", function() {
-    var firstNameError = document.getElementById("firstName-error");
-    firstNameError.textContent = "";
-    firstNameError.classList.remove("active-error");
-});
-
-//Last Name Field
-document.getElementById("lastName").addEventListener("input", function() {
-    var lastNameError = document.getElementById("lastName-error");
-    lastNameError.textContent = "";
-    lastNameError.classList.remove("active-error");
-});
