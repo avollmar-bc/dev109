@@ -60,12 +60,15 @@ function validateForm() {
 
 }
 
-// onblur call on HTML elements
-function blurValidation() {
-    console.log(event.target.value);
-}
-
+//First Name Validation
 var firstName = document.getElementById("firstName");
 firstName.addEventListener("blur", (event) => {
-    console.log(firstName.value);
+    if (!alphaTest.test(firstName)) {
+        firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
+        firstNameError.classList.add("active-error");
+        isValid = false;
+    } else {
+        firstNameError.classList.remove("active-error");
+        isValid = true;
+    }
 });
