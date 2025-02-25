@@ -1,7 +1,7 @@
 function validateForm() {
 
     //Collect field values
-    var firstName = document.getElementById("firstName").value;
+    var firstName = document.getElementById("firstName");
     var lastName = document.getElementById("lastName").value;
     var userEmail = document.getElementById("userEmail").value;
     var phone = document.getElementById("phone").value;
@@ -35,8 +35,6 @@ function validateForm() {
 
     //Alpha only - up to 20 characters
     var alphaTest = /^[a-zA-Z]{1,20}$/;
-
-
     var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
     // old test - var emailTest = /^\S+@\S+\.\S+$/;
 
@@ -61,3 +59,12 @@ function validateForm() {
         isValid = false;
 
 }
+
+// onblur call on HTML elements
+function blurValidation() {
+    console.log(event.target.value);
+}
+
+firstName.addEventListener("blur" function() {
+    console.log(this.value);
+});
