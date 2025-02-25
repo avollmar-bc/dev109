@@ -35,7 +35,10 @@ function validateForm() {
 
     //Alpha only - up to 20 characters
     var alphaTest = /^[a-zA-Z]{1,20}$/;
-    var emailTest = /^\S+@\S+\.\S+$/;
+
+
+    var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/
+    // old test - var emailTest = /^\S+@\S+\.\S+$/;
 
     //First Name Field
     if (!alphaTest.test(firstName)) {
