@@ -66,6 +66,8 @@ var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
 
 //First Name Validation
 var firstName = document.getElementById("firstName");
+var firstNameError = document.getElementById("firstName-error");
+
 firstName.addEventListener("blur", (event) => {
     if (!alphaTest.test(firstName)) {
         firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
