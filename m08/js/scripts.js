@@ -21,6 +21,6 @@ function addListItem(itemName) {
     // Insert the new element into its position.
     position.appendChild(newEl);
 
-    var formField = document.getElementById("formInput");
+    var formField = document.getElementById("itemInput");
     formField.value = '';
 }
