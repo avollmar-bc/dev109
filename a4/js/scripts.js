@@ -69,7 +69,7 @@ var firstName = document.getElementById("firstName");
 var firstNameError = document.getElementById("firstName-error");
 
 firstName.addEventListener("blur", (event) => {
-    if (!alphaTest.test(firstName)) {
+    if (!alphaTest.test(firstName.value)) {
         firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         firstNameError.classList.add("active-error");
         isValid = false;
