@@ -19,6 +19,7 @@ body {
 
 input, select {
     display: block;
+    margin-bottom: 10px;
 }
 
 /*-- Hide numeric input spinners --*/
@@ -35,3 +36,7 @@ input[type=number] {
 
 /*-- Error message styles --*/
 
+.errorMessage {
+    color: red;
+    font-weight: bold;
+}
