@@ -54,6 +54,7 @@ function validateForm() {
         isValid = false;
     } 
 
+    return isValid;
 }
 //End validateForm function
 
