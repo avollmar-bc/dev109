@@ -20,7 +20,7 @@ function validateForm() {
     }
 
     //Email Field
-    if (!emailTest.test(userEmail))
+    if (!emailTest.test(userEmail)) {
         userEmailError.innerHTML = 'The Email field must be formatted as an email address.';
         userEmailError.classList.add("active-error");
         isValid = false;
