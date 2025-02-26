@@ -55,6 +55,7 @@ function validateForm() {
     } 
 
 }
+//End validateForm function
 
 //Regex Testing
 var alphaTest = /^[a-zA-Z]{1,20}$/;
