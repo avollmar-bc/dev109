@@ -73,6 +73,8 @@ var userNameTest = /^[0-9A-Za-z]{6,12}$/;
 //Pulled from https://regexlib.com/Search.aspx?k=password&c=0&m=0&ps=20&p=4
 var passwordTest = /^(?=.*[a-z])(?=.*[A-Z])((?=.*\d)|(?=.*[!@#$%^&*()'"]))[A-Za-z\d!@#$%^&*()'"](?!\s).{5,7}$/;
 
+var zipCodeTest = /^[0-9]{5}$/;
+
 
 
 //First Name Validation
@@ -195,4 +197,16 @@ password.addEventListener("blur", (event) => {
 });
 
 //Zipcode Validation/Conditional
+var zipCode = document.getElementById("zipCode");
+var zipCodeError = document.getElementById("zipCode-error");
 
+zipCode.addEventListener("blur", (event) => {
+    if (!zipCodeTest.test(zipCode.value)) {
+        zipCodeError.innerHTML = 'Must be a valid zip code.';
+        zipCodeError.classList.add("active-error");
+        isValid = false;
+    } else {
+        zipCodeError.innerHTML = '';
+        zipCodeError.classList.remove("active-error");
+    }
+});
