@@ -95,3 +95,19 @@ lastName.addEventListener("blur", (event) => {
         isValid = true;
     }
 });
+
+//Email Validation
+var userEmail = document.getElementById("userEmail");
+var userEmailError = document.getElementById("userEmail-error");
+
+userEmail.addEventListener("blur", (event) => {
+    if (!emailTest.test(userEmail.value)) {
+        userEmailError.innerHTML = 'The Email field must be a properly formated email address.';
+        userEmailError.classList.add("active-error");
+        isValid = false;
+    } else {
+        userEmailError.innerHTML = '';
+        userEmailError.classList.remove("active-error");
+        isValid = true;
+    }
+});
