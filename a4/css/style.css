@@ -1,6 +1,8 @@
 body {
     font-family: "Roboto", serif;
     font-weight: normal;
+    background-color: #DAFFEF;
+    color: #5D737E;
 }
 
 #container {
@@ -15,6 +17,8 @@ body {
     padding: 15px 25px;
     border: 1px solid #666;
     border-radius: 5px;
+    background-color: #C0FDFB;
+    box-shadow: 2px 3px 2px #5D737E;
 }
 
 input, select {
