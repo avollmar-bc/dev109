@@ -70,6 +70,9 @@ var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
 var phoneTest = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
 var userNameTest = /^[0-9A-Za-z]{6,12}$/;
 
+//Pulled from https://regexlib.com/Search.aspx?k=password&c=0&m=0&ps=20&p=4
+var passwordTest = /^(?=.*[a-z])(?=.*[A-Z])((?=.*\d)|(?=.*[!@#$%^&*()'"]))[A-Za-z\d!@#$%^&*()'"](?!\s).{5,7}$/;
+
 
 
 //First Name Validation
