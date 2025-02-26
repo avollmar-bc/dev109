@@ -178,3 +178,18 @@ userName.addEventListener("blur", (event) => {
         userNameError.classList.remove("active-error");
     }
 });
+
+//Password Validation
+var password = document.getElementById("password");
+var passwordError = document.getElementById("password-error");
+
+userName.addEventListener("blur", (event) => {
+    if (!passwordTest.test(password.value)) {
+        passwordError.innerHTML = 'Your password must contain at least ONE uppercase, ONE lowercase, ONE number, and ONE special character.';
+        passwordError.classList.add("active-error");
+        isValid = false;
+    } else {
+        passwordError.innerHTML = '';
+        passwordError.classList.remove("active-error");
+    }
+});
