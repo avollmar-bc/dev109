@@ -62,8 +62,14 @@ function validateForm() {
 
 //Regex Testing
 var alphaTest = /^[a-zA-Z]{1,20}$/;
+
+//Regex pulled from - https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript?page=2&tab=scoredesc
 var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
+
+//Regex pulled from - https://stackoverflow.com/questions/16699007/regular-expression-to-match-standard-10-digit-phone-number
 var phoneTest = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+var userNameTest = /^[0-9A-Za-z]{6,12}$/;
+
 
 
 //First Name Validation
@@ -129,6 +135,8 @@ phone.addEventListener("blur", (event) => {
     }
 });
 
+//Snippet pulled from - https://stackoverflow.com/questions/30058927/format-a-phone-number-as-a-user-types-using-pure-javascript
+//Now THIS is podracing!
 window.addEventListener('load', () => {
     const phoneInput = document.getElementById("phone");
     phoneInput.addEventListener('keydown', disallowNonNumericInput);
@@ -141,7 +149,6 @@ window.addEventListener('load', () => {
     if (/[0-9.]/.test(evt.key)) { return; }
     evt.preventDefault();
   }
-  
   const formatToPhone = (evt) => {
     const digits = evt.target.value.replace(/\D/g,'').substring(0,10);
     const areaCode = digits.substring(0,3);
@@ -152,3 +159,19 @@ window.addEventListener('load', () => {
     else if(digits.length > 3) {evt.target.value = `(${areaCode}) ${prefix}`;}
     else if(digits.length > 0) {evt.target.value = `(${areaCode}`;}
   };
+//End Snippet
+
+//Username Validation
+var userName = document.getElementById("userName");
+var userNameError = document.getElementById("userName-error");
+
+userName.addEventListener("blur", (event) => {
+    if (!userNameTest.test(userName.value)) {
+        userNameError.innerHTML = 'The Username field must be between 6 and 12 alphanumeric characters.';
+        userNameError.classList.add("active-error");
+        isValid = false;
+    } else {
+        userNameError.innerHTML = '';
+        userNameError.classList.remove("active-error");
+    }
+});
