@@ -210,3 +210,6 @@ zipCode.addEventListener("blur", (event) => {
         zipCodeError.classList.remove("active-error");
     }
 });
+
+var countryName = document.getElementById("countryName").value;
+countryName = 'United States' ? zipCode.disabled = true : zipCode.disabled = false;
