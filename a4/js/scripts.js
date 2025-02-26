@@ -63,7 +63,8 @@ function validateForm() {
 //Regex Testing
 var alphaTest = /^[a-zA-Z]{1,20}$/;
 var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
-var phoneTest = /^[0-9]{16}$/;
+var phoneTest = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+
 
 //First Name Validation
 var firstName = document.getElementById("firstName");
