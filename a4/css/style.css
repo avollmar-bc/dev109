@@ -1,7 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Roboto", serif;
     font-weight: normal;
     background-image: linear-gradient(to right top, #64b6ac, #83c8bb, #a1dacb, #beecdc, #daffef);
+    background-size: cover;
     color: #5D737E;
 }
 
@@ -17,8 +22,8 @@ body {
     padding: 15px 25px;
     border: 2px solid #C0FDFB;
     border-radius: 5px;
-    background-color: #C0FDFB;
-    box-shadow: 2px 3px 2px #5D737E;
+    background-color: #FCFFFD;
+    box-shadow: 2px 3px 2px #90ADBB;
 }
 
 input, select {
