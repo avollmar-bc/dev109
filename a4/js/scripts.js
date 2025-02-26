@@ -202,7 +202,7 @@ var zipCodeError = document.getElementById("zipCode-error");
 
 zipCode.addEventListener("blur", (event) => {
     if (!zipCodeTest.test(zipCode.value)) {
-        zipCodeError.innerHTML = 'Must be a valid zip code.';
+        zipCodeError.innerHTML = 'Must be a valid 5-digit zip code.';
         zipCodeError.classList.add("active-error");
         isValid = false;
     } else {
