@@ -68,6 +68,7 @@ var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
 
 //Regex pulled from - https://stackoverflow.com/questions/16699007/regular-expression-to-match-standard-10-digit-phone-number
 var phoneTest = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+
 var userNameTest = /^[0-9A-Za-z]{6,12}$/;
 
 //Pulled from https://regexlib.com/Search.aspx?k=password&c=0&m=0&ps=20&p=4
