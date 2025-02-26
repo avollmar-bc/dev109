@@ -176,7 +176,7 @@ function validateForm() {
 
 //On submit, catch and test each field for validation
     //First Name Field
-    if (!alphaTest.test(firstName)) {
+    if (!alphaTest.test(firstName.value)) {
         firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         firstNameError.classList.add("active-error");
         isValid = false;
@@ -185,7 +185,7 @@ function validateForm() {
     }
 
     //Last Name Field
-    if (!alphaTest.test(lastName)) {
+    if (!alphaTest.test(lastName.value)) {
         lastNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         lastNameError.classList.add("active-error");
         isValid = false;
@@ -194,7 +194,7 @@ function validateForm() {
     }
 
     //Email Field
-    if (!emailTest.test(userEmail)) {
+    if (!emailTest.test(userEmail.value)) {
         userEmailError.innerHTML = 'The Email field must be formatted as an email address.';
         userEmailError.classList.add("active-error");
         isValid = false;
