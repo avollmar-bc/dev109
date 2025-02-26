@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", serif;
     font-weight: normal;
-    background-color: #DAFFEF;
+    background-image: linear-gradient(to right top, #64b6ac, #83c8bb, #a1dacb, #beecdc, #daffef);
     color: #5D737E;
 }
 
