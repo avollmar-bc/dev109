@@ -84,7 +84,7 @@ firstName.addEventListener("blur", (event) => {
 var lastName = document.getElementById("lastName");
 var lastNameError = document.getElementById("lastName-error");
 
-firstName.addEventListener("blur", (event) => {
+lastName.addEventListener("blur", (event) => {
     if (!alphaTest.test(lastName.value)) {
         lastNameError.innerHTML = 'The Last Name field must contain up to 20 alphabetical characters.';
         lastNameError.classList.add("active-error");
