@@ -213,6 +213,13 @@ zipCode.addEventListener("blur", (event) => {
 
 var countryName = document.getElementById("countryName");
 countryName.addEventListener("change", (event) => {
-    countryName.value == 'United States' ? zipCode.disabled = false : zipCode.disabled = true;
-    countryName.value == 'United States' ? zipCode.required = true : zipCode.required = false;
+    zipCodeError.innerHTML = '';
+    zipCodeError.classList.remove("active-error");
+    if (countryName.value == 'United States') {
+        zipCode.disabled = false;
+        zipCode.required = true;
+    } else {
+        zipCode.disabled = true;
+        zipCode.required = false;
+    }
 });
