@@ -193,3 +193,6 @@ password.addEventListener("blur", (event) => {
         passwordError.classList.remove("active-error");
     }
 });
+
+//Zipcode Validation/Conditional
+
