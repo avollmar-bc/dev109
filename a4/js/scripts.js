@@ -212,4 +212,4 @@ zipCode.addEventListener("blur", (event) => {
 });
 
 var countryName = document.getElementById("countryName").value;
-countryName = 'United States' ? zipCode.disabled = true : zipCode.disabled = false;
+countryName == 'United States' ? zipCode.disabled = false : zipCode.disabled = true;
