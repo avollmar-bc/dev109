@@ -16,12 +16,7 @@ input, select {
     display: block;
 }
 
-.errorMessage {
-    color: red;
-    font-style: bold;
-}
-
-/*-- Hide Nnmeric input spinners --*/
+/*-- Hide numeric input spinners --*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
@@ -31,4 +26,25 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
+}
+
+/*-- Error message styles --*/
+
+.errorMessage {
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-shadow: 2px 3px 2px #aaa;
+    margin-top: 3px;
+    margin-left: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.errorMessage:before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 10px solid black;
+    left:-10px;
 }
