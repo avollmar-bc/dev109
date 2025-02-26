@@ -35,6 +35,14 @@ label {
     margin-top: 10px;
 }
 
+.submission-wrapper {
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /*-- Hide numeric input spinners --*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
