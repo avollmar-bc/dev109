@@ -119,7 +119,7 @@ var phoneError = document.getElementById("phone-error");
 
 phone.addEventListener("blur", (event) => {
     if (!phoneTest.test(phone.value)) {
-        phoneError.innerhTML = 'The Phone field must be a properly formatted phone number.';
+        phoneError.innerHTML = 'The Phone field must be a properly formatted phone number.';
         phoneError.classList.add("active-error");
         isValid = false;
     } else {
