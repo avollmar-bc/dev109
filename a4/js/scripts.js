@@ -214,4 +214,5 @@ zipCode.addEventListener("blur", (event) => {
 var countryName = document.getElementById("countryName");
 countryName.addEventListener("change", (event) => {
     countryName.value == 'United States' ? zipCode.disabled = false : zipCode.disabled = true;
+    countryName.value == 'United States' ? zipCode.required = true : zipCode.required = false;
 });
