@@ -216,11 +216,11 @@ countryName.addEventListener("change", (event) => {
     zipCodeError.innerHTML = '';
     zipCodeError.classList.remove("active-error");
     if (countryName.value == 'United States') {
-        zipCode.innerHTML = '';
+        zipCode.value = '';
         zipCode.disabled = false;
         zipCode.required = true;
     } else {
-        zipCode.innerHTML = '';
+        zipCode.value = '';
         zipCode.disabled = true;
         zipCode.required = false;
     }
