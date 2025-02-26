@@ -12,7 +12,7 @@
 <body>
     <div id="container">
         <div class="form-wrapper">
-            <form id="validationForm" action="" onsubmit="return false;">
+            <form id="validationForm" method="get" action="thank-you.html" onsubmit="return validateForm();">
                 <label for="firstName">First Name</label><br/>
                 <span id="firstName-error" class="errorMessage"></span>
                 <input id="firstName" type="text" name="firstName" maxlength="20" required>
@@ -360,7 +360,7 @@
                 <label for="comments">Comments</label><br/>
                 <textarea id="comments" name="comments" rows="4" cols="50" placeholder="(Optional) Add comments here..."></textarea>
                 <span id="comments-error" class="errorMessage"></span>
-                <button id="submitButton" onclick="validateForm();">Submit</button>
+                <button id="submitButton" stype="submit">Submit</button>
             </form>
         </div>
     </div>
