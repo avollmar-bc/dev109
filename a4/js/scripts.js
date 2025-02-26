@@ -211,5 +211,7 @@ zipCode.addEventListener("blur", (event) => {
     }
 });
 
-var countryName = document.getElementById("countryName").value;
-countryName == 'United States' ? zipCode.disabled = false : zipCode.disabled = true;
+var countryName = document.getElementById("countryName");
+countryName.addEventListener("change", (event) => {
+    countryName.value == 'United States' ? zipCode.disabled = false : zipCode.disabled = true;
+};)
