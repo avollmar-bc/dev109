@@ -19,36 +19,35 @@
                 
 
                 <label for="lastName">Last Name</label><br/>
-                <span id="lastName-error" class="errorMessage"></span>
                 <input id="lastName" type="text" name="lastName" maxlength="20" required>
-                
+                <span id="lastName-error" class="errorMessage"></span>
+
 
                 <label for="userEmail">Email</label><br/>
-                <span id="userEmail-error" class="errorMessage"></span>
                 <input id="userEmail" type="email" name="userEmail" required>
+                <span id="userEmail-error" class="errorMessage"></span>
 
                 <label for="phone">Phone</label><br/>
-                <span id="phone-error" class="errorMessage"></span>
                 <input id="phone" type="tel" name="phone" maxlength="16" required>
+                <span id="phone-error" class="errorMessage"></span>
 
                 <label for="userName">User Name</label><br/>
-                <span id="userName-error" class="errorMessage"></span>
                 <input id="userName" type="text" name="userName" maxlength="12" required>
+                <span id="userName-error" class="errorMessage"></span>
 
                 <label for="password">Password</label><br/>
-                <span id="password-error" class="errorMessage"></span>
                 <input id="password" type="password" name="password" maxlength="7" required>
+                <span id="password-error" class="errorMessage"></span>
 
                 <label for="address">Address</label><br/>
-                <span id="address-error" class="errorMessage"></span>
                 <input id="address" type="text" name="address" required>
+                <span id="address-error" class="errorMessage"></span>
 
                 <label for="cityName">City</label><br/>
-                <span id="cityName-error" class="errorMessage"></span>
                 <input id="cityName" type="text" name="cityName" required>
+                <span id="cityName-error" class="errorMessage"></span>
 
                 <label for="stateName">State</label><br/>
-                <span id="stateName-error" class="errorMessage"></span>
                 <select id="stateName" name="stateName" required>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -102,9 +101,9 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select>
+                <span id="stateName-error" class="errorMessage"></span>
 
                 <label for="countryName">Country</label><br/>
-                <span id="countryName-error" class="errorMessage"></span>
                 <select id="countryName" name="countryName" required>
                     <option value="United States" selected="selected">United States</option>
                     <option value="Afghanistan">Afghanistan</option>
@@ -351,11 +350,12 @@
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
+                <span id="countryName-error" class="errorMessage"></span>
 
                 <label for="zipCode">Zipcode</label><br/>
+                <input id="zipCode" type="number" name="zipCode" min="10000" max="99999">
                 <span id="zipCode-error" class="errorMessage"></span>
-                <input id="zipCode" type="number" name="zipCode" max="99999">
-                
+
 
                 <label for="comments">Comments</label><br/>
                 <textarea id="comments" name="comments" rows="4" cols="50" placeholder="(Optional) Add comments here..."></textarea>
