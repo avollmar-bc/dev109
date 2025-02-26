@@ -1,5 +1,10 @@
+
+//Fires on form submit
 function validateForm() {
 
+    isValid = true;
+
+//On submit, catch and test each field for validation
     //First Name Field
     if (!alphaTest.test(firstName)) {
         firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
@@ -19,6 +24,35 @@ function validateForm() {
         userEmailError.innerHTML = 'The Email field must be formatted as an email address.';
         userEmailError.classList.add("active-error");
         isValid = false;
+    }
+
+    //Phone Field
+    if (!phoneTest.test(phone.value)) {
+        phoneError.innerHTML = 'The Phone field must be a properly formatted phone number.';
+        phoneError.classList.add("active-error");
+        isValid = false;
+    }
+
+    //Username Field
+    if (!userNameTest.test(userName.value)) {
+        userNameError.innerHTML = 'The Username field must be between 6 and 12 alphanumeric characters.';
+        userNameError.classList.add("active-error");
+        isValid = false;
+    }
+
+    //Password Field
+    if (!passwordTest.test(password.value)) {
+        passwordError.innerHTML = 'Your password must contain at least ONE uppercase, ONE lowercase, ONE number, and ONE special character.';
+        passwordError.classList.add("active-error");
+        isValid = false;
+    }
+
+    //Zipcode Field
+    if (!zipCodeTest.test(zipCode.value)) {
+        zipCodeError.innerHTML = 'Must be a valid 5-digit zip code.';
+        zipCodeError.classList.add("active-error");
+        isValid = false;
+    } 
 
 }
 
