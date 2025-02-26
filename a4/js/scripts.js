@@ -63,6 +63,7 @@ function validateForm() {
 //Regex Testing
 var alphaTest = /^[a-zA-Z]{1,20}$/;
 var emailTest = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
+var phoneTest = /^[0-9]{10}$/;
 
 //First Name Validation
 var firstName = document.getElementById("firstName");
@@ -102,12 +103,27 @@ var userEmailError = document.getElementById("userEmail-error");
 
 userEmail.addEventListener("blur", (event) => {
     if (!emailTest.test(userEmail.value)) {
-        userEmailError.innerHTML = 'The Email field must be a properly formated email address.';
+        userEmailError.innerHTML = 'The Email field must be a properly formatted email address.';
         userEmailError.classList.add("active-error");
         isValid = false;
     } else {
         userEmailError.innerHTML = '';
         userEmailError.classList.remove("active-error");
         isValid = true;
+    }
+});
+
+//Phone Validation
+var phone = document.getElementById("phone");
+var phoneError = document.getElementById("phone-error");
+
+phone.addEventListener("blur", (event) => {
+    if (!phoneTest.test(phone.value)) {
+        phoneError.innerhTML = 'The Phone field must be a properly formatted phone number.';
+        phoneError.classList.add("active-error");
+        isValid = false;
+    } else {
+        phoneError.innerHTML = '';
+        phoneError.classList.remove("active-error");
     }
 });
