@@ -148,7 +148,7 @@ window.addEventListener('load', () => {
     const prefix = digits.substring(3,6);
     const suffix = digits.substring(6,10);
   
-    if(digits.length > 6) {evt.target.value = `(${areaCode}) ${prefix} - ${suffix}`;}
+    if(digits.length > 6) {evt.target.value = `(${areaCode}) ${prefix}-${suffix}`;}
     else if(digits.length > 3) {evt.target.value = `(${areaCode}) ${prefix}`;}
     else if(digits.length > 0) {evt.target.value = `(${areaCode}`;}
   };
