@@ -20,6 +20,9 @@
     position: absolute;
     top: 37%;
     font-size: 26px;
+    font-family: 'BebasNeueBold';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .one-digit {
