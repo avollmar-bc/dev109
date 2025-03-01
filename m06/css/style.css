@@ -1,1 +1,5 @@
-
+.single-die {
+    max-width: 100px;
+    background-image: url('.../images/d20-dice.svg');
+    background-size: cover;
+}
