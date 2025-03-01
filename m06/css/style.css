@@ -1,7 +1,7 @@
 .single-die {
     max-width: 100px;
     min-height: 100px;
-    display: inline-block;
+    display: block;
     background-image: url('../images/d20-dice.svg');
     background-size: cover;
 }
