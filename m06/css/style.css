@@ -5,3 +5,17 @@
     background-image: url('../images/d20-dice.svg');
     background-size: cover;
 }
+
+.result-number {
+    position: absolute;
+    top: 37%;
+    font-size: 26px;
+}
+
+.one-digit {
+    left: 43%
+}
+
+.two-digit {
+    left: 37%
+}
