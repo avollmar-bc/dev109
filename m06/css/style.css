@@ -1,9 +1,18 @@
-.single-die {
+.d20-dice {
     max-width: 100px;
     min-height: 100px;
     display: block;
     position: relative;
     background-image: url('../images/d20-dice.svg');
+    background-size: cover;
+}
+
+.d10-dice {
+    max-width: 100px;
+    min-height: 100px;
+    display: block;
+    position: relative;
+    background-image: url('../images/d10-dice.svg');
     background-size: cover;
 }
 
