@@ -32,12 +32,12 @@ body {
 }
 
 .button-wrapper button {
+    margin-top: 15px;
     padding: 10px 15px;
 }
 
 #caption {
-    width: 100%;
-    text-align: center;
+    display: inline;
     font-size: 18px;
 }
 
