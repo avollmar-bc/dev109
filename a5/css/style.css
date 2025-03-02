@@ -27,12 +27,12 @@ body {
 }
 
 .button-wrapper, .validators {
+    margin-top: 15px;
     width: 100%;
     text-align: center;
 }
 
 .button-wrapper button {
-    margin-top: 15px;
     padding: 10px 15px;
 }
 
