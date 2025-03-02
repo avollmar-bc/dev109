@@ -34,3 +34,15 @@ var previousButton = document.getElementById("previous");
 
 previousButton.addEventListener("click",back,false);
 nextButton.addEventListener("click",next,false); 
+
+//Use arrow keys to navigate slideshow
+document.onkeydown = function(event) {
+    switch (event.keyCode) {
+        case 37:
+            back;
+        break;
+        case 39:
+            next;
+        break;
+    }
+};
