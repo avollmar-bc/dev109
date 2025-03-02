@@ -10,6 +10,12 @@ body {
     margin-right: auto;
 }
 
+#slideshow {
+    border: 2px solid #2d5194;
+    border-radius: 15px;
+    box-shadow: 2px 3px 2px #333;
+}
+
 .button-wrapper {
     width: 100%;
     text-align: center;
