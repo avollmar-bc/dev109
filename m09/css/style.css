@@ -3,6 +3,7 @@ body {
   }
 
 .container {
+    margin: 20% auto;
     max-width: 350px;
     padding: 15px 20px;
     background-color: white;
