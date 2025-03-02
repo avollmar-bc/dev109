@@ -1,19 +1,28 @@
 body {
     background: beige;
   }
-  .dot {
+
+.container {
+    max-width: 350px;
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.dot {
     background: black;
     position: absolute;
-  }
+}
 
-  .blue {
+.blue {
     background: blue;
-  }
+}
 
-  .green {
+.green {
     background: green;
-  }
+}
 
-  .red {
+.red {
     background: red;
-  }
+}
