@@ -37,6 +37,12 @@ nextButton.addEventListener("click",next,false);
 
 //Use arrow keys to navigate slideshow
 window.addEventListener("keydown", (event) => {
-    var press = event.key;
-    console.log(press);
+    switch (event.key) {
+        case 'ArrowLeft':
+            back();
+        break;
+        case 'ArrowRight':
+            next();
+        break;
+    }
 });
