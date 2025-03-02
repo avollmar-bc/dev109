@@ -18,6 +18,7 @@ var passwordTest = /^(?=.*[a-z])(?=.*[A-Z])((?=.*\d)|(?=.*[!@#$%^&*()'"]))[A-Za-
 var zipCodeTest = /^[0-9]{5}$/;
 
 
+//Field by field basis - onblur events run a regex check
 
 //First Name Validation
 var firstName = document.getElementById("firstName");
@@ -180,8 +181,6 @@ function validateForm() {
         firstNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         firstNameError.classList.add("active-error");
         isValid = false;
-        console.log(isvalid);
-
     }
 
     //Last Name Field
@@ -189,8 +188,6 @@ function validateForm() {
         lastNameError.innerHTML = 'The First Name field must contain up to 20 alphabetical characters.';
         lastNameError.classList.add("active-error");
         isValid = false;
-        console.log(isvalid);
-
     }
 
     //Email Field
@@ -198,8 +195,6 @@ function validateForm() {
         userEmailError.innerHTML = 'The Email field must be formatted as an email address.';
         userEmailError.classList.add("active-error");
         isValid = false;
-        console.log(isvalid);
-
     }
 
     //Phone Field
@@ -207,8 +202,6 @@ function validateForm() {
         phoneError.innerHTML = 'The Phone field must be a properly formatted phone number.';
         phoneError.classList.add("active-error");
         isValid = false;
-        console.log(isvalid);
-
     }
 
     //Username Field
