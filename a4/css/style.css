@@ -62,3 +62,8 @@ input[type=number] {
     font-weight: bold;
     font-size: 12px;
 }
+
+.validators {
+    text-align: center;
+    margin-top: 25px;
+}
