@@ -11,7 +11,8 @@ var colorChoice = document.getElementById("colorChoice");
 console.log(colorChoice);
 
 colorChoice.addEventListener("change", function(e) {
-    console.log(this.value);
+    console.log(colorChoice.value);
+    console.log("Butts: " + e.value);
 });
 
 event.stopPropagation();
