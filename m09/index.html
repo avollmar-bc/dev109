@@ -8,15 +8,18 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-<button>Clear</button>
-<label>Color</label>
-<select id="colorChoice">
-    <option value="blue">Blue</option>
-    <option value="green">Green</option>
-    <option value="red">red</option>
-</select>
-<input type="range" min="8" max="46" value="8" id="sizeSlider" oninput="this.nextElementSibling.value = this.value">
-<output>8</output>
-<script src="js/scripts.js"></script>
+    <div class="container">
+        <label>Color</label><br/>
+        <select id="colorChoice">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">red</option>
+        </select>
+        <label>Size</label><br/>
+        <input type="range" min="8" max="46" value="8" id="sizeSlider" oninput="this.nextElementSibling.value = this.value">
+        <output>8</output>
+        <button>Clear</button>
+        <script src="js/scripts.js"></script>
+    </div>
 </body>
 </html>
