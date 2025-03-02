@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(to right top, #180537, #1f194d, #262b64, #2b3d7c, #2d5194);
+}
+
 .container {
     position: relative;
     max-width: 960px;
@@ -10,7 +14,11 @@
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 15px;
+    bottom: 25px;
+}
+
+.button-wrapper button {
+    padding: 10px 15px;
 }
 
 #caption {
