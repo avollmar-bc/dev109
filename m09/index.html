@@ -15,7 +15,8 @@
     <option value="green">Green</option>
     <option value="red">red</option>
 </select>
-<input type="range" min="8" max="46" value="8" id="sizeSlider">
+<input type="range" min="8" max="46" value="8" id="sizeSlider" oninput="this.nextElementSibling.value = this.value">
+<output>8</output>
 <script src="js/scripts.js"></script>
 </body>
 </html>
