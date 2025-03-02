@@ -1,7 +1,7 @@
 var myImages =["images/slideshow-1.jpg", "images/slideshow-2.jpg","images/slideshow-3.jpg","images/slideshow-4.jpg","images/slideshow-5.jpg"];
 
 
-var captionImages =["Cat 1","Cat 2","Cat 3","Cat 4","Cat 5"];
+var captionImages =["Vash and Ed - AI Paintings","Vash chilling by the jam corner","Whose red dot do I have to chase for a drink around here?","Ed killing nerd time vibe","...and Vash killing nerd time vibe"];
 
  var index=0; 
 
