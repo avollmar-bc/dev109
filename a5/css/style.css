@@ -1,5 +1,11 @@
+html {
+    min-height: 100%;
+}
+
 body {
     background-image: linear-gradient(to right top, #180537, #1f194d, #262b64, #2b3d7c, #2d5194);
+    background-size: cover;
+    min-height: 100%;
 }
 
 .container {
