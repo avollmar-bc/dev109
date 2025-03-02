@@ -37,7 +37,7 @@ nextButton.addEventListener("click",next,false);
 
 //Use arrow keys to navigate slideshow
 document.onkeydown = function(event) {
-    switch (event.keyCode) {
+    switch (event.keycode) {
         case 37:
             back;
         break;
