@@ -10,9 +10,9 @@ for (index = element.length - 1; index >= 0; index--) {
 event.stopPropagation();
   });
   addEventListener("click", function(event) {
+    var colorChoice = document.getElementById("colorChoice").value;
     var dot = document.createElement("div");
-    dot.className = "dot test";
-
+    dot.className = "dot " + colorChoice;
     dot.style.left = (event.pageX - 4) + "px";
     dot.style.top = (event.pageY - 4) + "px";
     document.body.appendChild(dot);
